@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Brackeys Tutorial"
-run/main_scene="res://Scenes/Level01.tscn"
-config/features=PackedStringArray("4.3", "GL Compatibility")
+run/main_scene="uid://cpp6jv778u4w6"
+config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [dotnet]
