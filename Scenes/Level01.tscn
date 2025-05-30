@@ -245,7 +245,7 @@ _data = {
 &"move": SubResource("Animation_gyu0k")
 }
 
-[node name="Game" type="Node2D"]
+[node name="Level01" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_sp2n1")
