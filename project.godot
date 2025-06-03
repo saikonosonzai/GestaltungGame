@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Brackeys Tutorial"
-run/main_scene="uid://bn0k3yum53t0s"
+run/main_scene="uid://cjepedatnroo2"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
