@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://cjepedatnroo2"]
+[gd_scene load_steps=24 format=3 uid="uid://cjepedatnroo2"]
 
 [ext_resource type="PackedScene" uid="uid://b38xvldhcrwyw" path="res://Scenes/actors/player.tscn" id="1_cau2p"]
 [ext_resource type="Texture2D" uid="uid://cydx0va0laoeb" path="res://Sprites/world_tileset.png" id="2_sy6tq"]
@@ -463,6 +463,43 @@ _data = {
 &"RESET": SubResource("Animation_v158k")
 }
 
+[sub_resource type="Animation" id="Animation_jcono"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1317, -48)]
+}
+
+[sub_resource type="Animation" id="Animation_8xeey"]
+resource_name = "new_animation"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1317, -48), Vector2(1541, -29)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e1uir"]
+_data = {
+&"RESET": SubResource("Animation_jcono"),
+&"new_animation": SubResource("Animation_8xeey")
+}
+
 [node name="Game" type="Node"]
 
 [node name="Level 01" type="Node2D" parent="."]
@@ -544,3 +581,12 @@ autoplay = "Move"
 
 [node name="SlimeG" parent="Level 01" instance=ExtResource("6_13wh2")]
 position = Vector2(296, 32)
+
+[node name="Platform" parent="Level 01" instance=ExtResource("3_iqjit")]
+position = Vector2(1317, -48)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Level 01/Platform"]
+libraries = {
+&"": SubResource("AnimationLibrary_e1uir")
+}
+autoplay = "new_animation"
