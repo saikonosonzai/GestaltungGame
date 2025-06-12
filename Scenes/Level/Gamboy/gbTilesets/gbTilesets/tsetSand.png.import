@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2fnwa0nba8f0"
-path="res://.godot/imported/sign_01.png-5e6e5476388124e620a1742597359574.ctex"
+uid="uid://cyo04hwrv7idu"
+path="res://.godot/imported/tsetSand.png-e0879c9d3bd52ea8ea14d67d734c3b87.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Level/Gamboy/sprites/signs/sign_01.png"
-dest_files=["res://.godot/imported/sign_01.png-5e6e5476388124e620a1742597359574.ctex"]
+source_file="res://Scenes/Level/Gamboy/gbTilesets/gbTilesets/tsetSand.png"
+dest_files=["res://.godot/imported/tsetSand.png-e0879c9d3bd52ea8ea14d67d734c3b87.ctex"]
 
 [params]
 

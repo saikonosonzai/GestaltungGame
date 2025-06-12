@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0wk07ewb74on"
-path="res://.godot/imported/boulder_01.png-f53f309bf2eba24916918fe2152cc6c6.ctex"
+uid="uid://cqsirj6hg4qld"
+path="res://.godot/imported/tsetBones.png-2986f3491eacfde1a6f89025d80c5277.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Level/Gamboy/sprites/rocks/boulder_01.png"
-dest_files=["res://.godot/imported/boulder_01.png-f53f309bf2eba24916918fe2152cc6c6.ctex"]
+source_file="res://Scenes/Level/Gamboy/gbTilesets/gbTilesets/tsetBones.png"
+dest_files=["res://.godot/imported/tsetBones.png-2986f3491eacfde1a6f89025d80c5277.ctex"]
 
 [params]
 
