@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://ck81clai2pbqj" path="res://Scenes/Level/BetterPixel/background/background_layer_1.png" id="4_8n3q8"]
 [ext_resource type="Texture2D" uid="uid://xvvqourxvglb" path="res://Scenes/Level/BetterPixel/background/background_layer_2.png" id="5_hj4tk"]
 [ext_resource type="Texture2D" uid="uid://cy24c4wo0ypr5" path="res://Scenes/Level/BetterPixel/background/background_layer_3.png" id="6_hqdni"]
-[ext_resource type="PackedScene" uid="uid://dk5tlkbb3i3id" path="res://Scenes/actors/playerbetterpixel.tscn" id="7_fgxd2"]
+[ext_resource type="PackedScene" uid="uid://c3nijar5nn33o" path="res://Scenes/actors/playerbetterpixel.tscn" id="7_fgxd2"]
 [ext_resource type="PackedScene" uid="uid://dmt4u3ddfo64e" path="res://Scenes/Level/BetterPixel/assets/platform0201.tscn" id="8_qxa74"]
 [ext_resource type="Texture2D" uid="uid://djcwgtphr2n4r" path="res://Scenes/Level/BetterPixel/decorations/fence_1.png" id="9_83mm6"]
 

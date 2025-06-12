@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cyo04hwrv7idu" path="res://Scenes/Level/Gamboy/gbTilesets/gbTilesets/tsetSand.png" id="3_hqoly"]
 [ext_resource type="Texture2D" uid="uid://bpdgigly7dsj0" path="res://Scenes/Level/Gamboy/gbTilesets/gbTilesets/tsetTower.png" id="4_1dkmg"]
 [ext_resource type="Texture2D" uid="uid://duo78t5urcx42" path="res://Scenes/Level/Gamboy/gbTilesets/gbTilesets/tsetWater.png" id="5_6hdyy"]
-[ext_resource type="PackedScene" uid="uid://8v1fiowsr27g" path="res://Scenes/actors/playerGB.tscn" id="6_ku4hd"]
+[ext_resource type="PackedScene" path="res://Scenes/actors/playerGB.tscn" id="6_ku4hd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vqv4r"]
 texture = ExtResource("1_8qdfe")
