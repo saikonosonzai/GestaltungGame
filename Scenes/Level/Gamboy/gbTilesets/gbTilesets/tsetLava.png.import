@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwauuee1748bi"
-path="res://.godot/imported/dead_tree_03.png-b8409bf2c0f1490769c8f64e906a9179.ctex"
+uid="uid://8hudcdqftq5t"
+path="res://.godot/imported/tsetLava.png-f10a358a16088ad43ca59d6fd6b15e6b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/Level/Gamboy/sprites/plants/dead_tree_03.png"
-dest_files=["res://.godot/imported/dead_tree_03.png-b8409bf2c0f1490769c8f64e906a9179.ctex"]
+source_file="res://Scenes/Level/Gamboy/gbTilesets/gbTilesets/tsetLava.png"
+dest_files=["res://.godot/imported/tsetLava.png-f10a358a16088ad43ca59d6fd6b15e6b.ctex"]
 
 [params]
 

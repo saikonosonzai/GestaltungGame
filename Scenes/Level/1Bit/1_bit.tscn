@@ -830,7 +830,7 @@ layer_1/tile_data = PackedInt32Array(0, 655362, 9, 1, 720898, 9, 2, 786434, 9, 3
 position = Vector2(23, -158)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(-16, 19)
+position = Vector2(2, -8)
 zoom = Vector2(4, 4)
 limit_bottom = 170
 position_smoothing_enabled = true
@@ -850,3 +850,5 @@ libraries = {
 &"": SubResource("AnimationLibrary_egioa")
 }
 autoplay = "Move"
+
+[node name="Area2D" type="Area2D" parent="."]
