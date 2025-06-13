@@ -112,7 +112,7 @@ shape = SubResource("CircleShape2D_tr12e")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_etmh8")
-volume_db = -35.0
+volume_db = -26.095
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.2

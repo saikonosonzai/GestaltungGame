@@ -1,11 +1,12 @@
-[gd_scene load_steps=13 format=3 uid="uid://fuvpwq5c16x4"]
+[gd_scene load_steps=15 format=3 uid="uid://fuvpwq5c16x4"]
 
 [ext_resource type="Texture2D" uid="uid://cqsirj6hg4qld" path="res://Scenes/Level/Gamboy/gbTilesets/gbTilesets/tsetBones.png" id="1_8qdfe"]
 [ext_resource type="Texture2D" uid="uid://8hudcdqftq5t" path="res://Scenes/Level/Gamboy/gbTilesets/gbTilesets/tsetLava.png" id="2_2721r"]
 [ext_resource type="Texture2D" uid="uid://cyo04hwrv7idu" path="res://Scenes/Level/Gamboy/gbTilesets/gbTilesets/tsetSand.png" id="3_hqoly"]
 [ext_resource type="Texture2D" uid="uid://bpdgigly7dsj0" path="res://Scenes/Level/Gamboy/gbTilesets/gbTilesets/tsetTower.png" id="4_1dkmg"]
 [ext_resource type="Texture2D" uid="uid://duo78t5urcx42" path="res://Scenes/Level/Gamboy/gbTilesets/gbTilesets/tsetWater.png" id="5_6hdyy"]
-[ext_resource type="PackedScene" path="res://Scenes/actors/playerGB.tscn" id="6_ku4hd"]
+[ext_resource type="PackedScene" uid="uid://8v1fiowsr27g" path="res://Scenes/actors/playerGB.tscn" id="6_ku4hd"]
+[ext_resource type="PackedScene" uid="uid://whcft00mxnpk" path="res://Scenes/actors/goal.tscn" id="7_2721r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vqv4r"]
 texture = ExtResource("1_8qdfe")
@@ -126,6 +127,9 @@ sources/2 = SubResource("TileSetAtlasSource_abp1x")
 sources/3 = SubResource("TileSetAtlasSource_i6cf3")
 sources/4 = SubResource("TileSetAtlasSource_bq572")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hqoly"]
+size = Vector2(24, 38.5)
+
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -141,3 +145,12 @@ position = Vector2(3, -6)
 zoom = Vector2(4, 4)
 limit_bottom = 170
 position_smoothing_enabled = true
+
+[node name="Goal" parent="." instance=ExtResource("7_2721r")]
+loadScene = "res://Scenes/Level/BetterPixel/level_02.tscn"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Goal"]
+position = Vector2(339, -36.25)
+shape = SubResource("RectangleShape2D_hqoly")
+
+[connection signal="body_entered" from="Goal" to="Goal" method="_on_body_entered"]

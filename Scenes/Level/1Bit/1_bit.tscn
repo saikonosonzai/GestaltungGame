@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://bi7x150wlek2k"]
+[gd_scene load_steps=13 format=3 uid="uid://bi7x150wlek2k"]
 
 [ext_resource type="Texture2D" uid="uid://dnj7k4df285vv" path="res://Scenes/Level/1Bit/Tilemap/monochrome_tilemap.png" id="1_o3fen"]
 [ext_resource type="PackedScene" uid="uid://dtapdj2mxoy54" path="res://Scenes/actors/player1bit.tscn" id="2_eb4xo"]
 [ext_resource type="PackedScene" uid="uid://cep8eifl3tebg" path="res://Scenes/Level/Pixel/assets/killzone.tscn" id="3_8tapk"]
 [ext_resource type="PackedScene" uid="uid://dtvlq3yo6gdbq" path="res://Scenes/Level/1Bit/Platform1Bit.tscn" id="4_etyko"]
+[ext_resource type="PackedScene" uid="uid://whcft00mxnpk" path="res://Scenes/actors/goal.tscn" id="5_qdavb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eb4xo"]
 texture = ExtResource("1_o3fen")
@@ -815,6 +816,9 @@ _data = {
 &"RESET": SubResource("Animation_qdavb")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oesu2"]
+size = Vector2(20, 37)
+
 [node name="1Bit" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -852,3 +856,14 @@ libraries = {
 autoplay = "Move"
 
 [node name="Area2D" type="Area2D" parent="."]
+
+[node name="Goal" parent="." instance=ExtResource("5_qdavb")]
+position = Vector2(690, -28)
+loadScene = "res://Scenes/Level/Gamboy/gameboy.tscn"
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Goal"]
+position = Vector2(0, 8.5)
+shape = SubResource("RectangleShape2D_oesu2")
+
+[connection signal="body_entered" from="Goal" to="Goal" method="_on_body_entered"]

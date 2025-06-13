@@ -256,7 +256,7 @@ height = 34.24
 [node name="Player" type="CharacterBody2D"]
 z_index = 5
 texture_filter = 1
-position = Vector2(1, -16)
+position = Vector2(1, -17)
 collision_layer = 2
 script = ExtResource("1_4ojb1")
 metadata/_edit_group_ = true
