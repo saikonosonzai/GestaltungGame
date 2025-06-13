@@ -1,10 +1,9 @@
 extends CharacterBody2D
 
-
 const SPEED = 130.0
 const JUMP_VELOCITY = -300.0
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
-
+@onready var camera_2d: Camera2D = $Camera2D
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -29,3 +28,10 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	camera_2d.limit_left = 784
+
+
+func _on_area_2d_body_exited(body: Node2D) -> void:
+	camera_2d.limit_left = -205
