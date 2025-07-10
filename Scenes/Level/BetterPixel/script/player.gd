@@ -6,10 +6,13 @@ const JUMP_VELOCITY = -300.0
 @onready var camera_2d: Camera2D = $Camera2D
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 @export var bullet_time_duration := 0.0
 @export var time_stop_duration := 0.0
 @export var cooldown := 0.0
 var can_use_bullet_time := true
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -47,6 +50,7 @@ func _physics_process(delta: float) -> void:
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 func activate_bullet_time():
 	if GameState.unlocked_skills["bullet_time"]:
@@ -68,6 +72,8 @@ func activate_time_stop():
 	await get_tree().create_timer(time_stop_duration, true).timeout
 	get_tree().paused = false
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
