@@ -1,5 +1,6 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [gd_resource type="AudioBusLayout" format=3 uid="uid://dlce43jx0bf8m"]
 
 [resource]
@@ -8,11 +9,16 @@ bus/0/send = &"New Bus"
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 [gd_resource type="AudioBusLayout" format=3 uid="uid://qc5ne6qse4tb"]
 
 [resource]
 bus/0/volume_db = -5.99743
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
