@@ -11,6 +11,9 @@ const JUMP_VELOCITY = -300.0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 @export var bullet_time_duration := 0.0
@@ -18,6 +21,9 @@ const JUMP_VELOCITY = -300.0
 @export var cooldown := 0.0
 var can_use_bullet_time := true
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -70,6 +76,9 @@ func _physics_process(delta: float) -> void:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
@@ -94,6 +103,9 @@ func activate_time_stop():
 	get_tree().paused = false
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
