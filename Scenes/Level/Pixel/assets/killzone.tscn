@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://434rdf1qw6ft" path="res://Scenes/Level/BetterPixel/script/killzone.gd" id="1_adau6"]
 
 [node name="Killzone" type="Area2D"]
+process_mode = 3
 collision_mask = 2
 script = ExtResource("1_adau6")
 
