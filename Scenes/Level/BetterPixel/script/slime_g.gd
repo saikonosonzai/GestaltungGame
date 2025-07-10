@@ -20,3 +20,7 @@ func _process(delta: float) -> void:
 		animated_sprite_2d.flip_h = false
 	
 	position.x += direction * SPEED * delta
+
+
+func _on_cam_border_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.

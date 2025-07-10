@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=3 format=3 uid="uid://bs1rx45i0cmkh"]
+=======
+[gd_scene load_steps=3 format=3 uid="uid://can30oe8nd53v"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Texture2D" uid="uid://bnft4k230x260" path="res://Sprites/platforms.png" id="1_2u5n3"]
 

@@ -8,9 +8,11 @@ size = Vector2(34, 8)
 [node name="PlatformIce" type="AnimatableBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(9.84438e-07, 0)
+scale = Vector2(1.03226, 1)
 texture = ExtResource("1_qnidu")
 region_enabled = true
-region_rect = Rect2(16, 48, 32, 9)
+region_rect = Rect2(16.0364, 47.9424, 31.9575, 9.11079)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_cgdsw")
