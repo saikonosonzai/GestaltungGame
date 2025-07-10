@@ -650,12 +650,14 @@ layer_4/tile_data = PackedInt32Array(262208, 262144, 9, 262209, 262144, 9, 26221
 position = Vector2(430, 159)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level 01/Killzone"]
+process_mode = 3
 shape = SubResource("WorldBoundaryShape2D_4xrkf")
 
 [node name="KillzoneLava" parent="Level 01" instance=ExtResource("5_wsuyn")]
 position = Vector2(430, 159)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level 01/KillzoneLava"]
+process_mode = 3
 position = Vector2(401.5, -38)
 shape = SubResource("RectangleShape2D_e1uir")
 
@@ -663,11 +665,14 @@ shape = SubResource("RectangleShape2D_e1uir")
 position = Vector2(430, 159)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level 01/KillzoneWater"]
+process_mode = 3
 position = Vector2(994, -30)
 shape = SubResource("RectangleShape2D_yw3h8")
 
 [node name="Player" parent="Level 01" instance=ExtResource("1_cau2p")]
+process_mode = 3
 position = Vector2(-154, 72)
+time_stop_duration = 5.0
 
 [node name="Camera2D" type="Camera2D" parent="Level 01/Player"]
 position = Vector2(0, -6)

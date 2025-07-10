@@ -291,6 +291,9 @@ z_index = 5
 texture_filter = 1
 collision_layer = 2
 script = ExtResource("1_41hba")
+bullet_time_duration = 2.0
+time_stop_duration = 3.0
+cooldown = 5.0
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
